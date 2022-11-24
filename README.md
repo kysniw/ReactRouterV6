@@ -4,6 +4,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+At first you have to install node modules using command:
+
+### `npm install`
+
+or use **_yarn_** (recommended)
+
+### `yarn install`
+
+To use yarn you have to intall **_yarn_** by **_npm_** command.
+
 In the project directory, you can run:
 
 ### `npm start`
