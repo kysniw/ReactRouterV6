@@ -14,7 +14,10 @@ import ErrorPage from "./pages/ErrorPage";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/*" element={<App />} errorElement={<ErrorPage />}></Route>
-  )
+  ),
+  {
+    basename: process.env.PUBLIC_URL,
+  }
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
