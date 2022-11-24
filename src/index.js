@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import App from "./layouts/App";
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
   Route,
@@ -11,12 +11,12 @@ import {
 
 import ErrorPage from "./pages/ErrorPage";
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/*" element={<App />} errorElement={<ErrorPage />}></Route>
   ),
   {
-    basename: process.env.PUBLIC_URL,
+    basename: "/ReactRouterV6",
   }
 );
 
