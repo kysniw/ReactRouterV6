@@ -14,10 +14,7 @@ import ErrorPage from "./pages/ErrorPage";
 const router = createHashRouter(
   createRoutesFromElements(
     <Route path="/*" element={<App />} errorElement={<ErrorPage />}></Route>
-  ),
-  {
-    basename: "/ReactRouterV6",
-  }
+  )
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
