@@ -13,11 +13,11 @@ const Page = () => {
     <>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="products" element={<ProductListPage />} />
-        <Route path="product/:id" element={<ProductPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="admin/*" element={<AdminPage />} />
-        <Route path="login" element={<LoginPage />} />
+        <Route path="/products" element={<ProductListPage />} />
+        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/admin/*" element={<AdminPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Outlet />
